@@ -6,12 +6,10 @@ import React, { useEffect, useState } from "react";
 export default function Home() {
   const [weather, setWeather] = useState({});
   const [searchValue, setSearchValue] = useState("Ulaanbaatar");
-
   const getSearchValue = (event) => {
     const inputValue = event.target.value;
     setSearchValue(inputValue);
   };
-
   const getCities = async () => {
     
     try {
